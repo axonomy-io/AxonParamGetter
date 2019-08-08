@@ -1,0 +1,24 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**",
+      "src/assets/abi/**"
+    ]
+  },
+  "rules": {
+    "indent": [true, "spaces", 2],
+    "max-line-length": [true, {
+        "limit": 240, 
+        "ignore-pattern": "^import [^,]+ from |^export | implements"
+    }],
+    "interface-name": false,
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [false, "single"]
+  }
+}
